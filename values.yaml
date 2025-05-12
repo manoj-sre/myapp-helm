@@ -1,0 +1,16 @@
+frontend:
+  image: nginx
+  port: 80
+  nodePort: 30080
+
+mysql:
+  image: mysql:5.7
+  rootPassword: rootpass
+  database: mydb
+  port: 3306
+  pvcSize: 1Gi
+
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  port: 80
+  nodePort: 30081
